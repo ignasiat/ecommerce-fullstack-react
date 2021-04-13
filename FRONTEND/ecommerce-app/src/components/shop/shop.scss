@@ -1,0 +1,127 @@
+@import '../../styles/reset.scss';
+@import '../../styles/font.scss';
+@import '../../styles/color.scss';
+
+* {
+  font-family: $font-primary;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 600px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  color: $color-primary;
+  
+
+  .card-item {
+    display: flex;
+    font-weight: 300px;
+    padding: 10px 20px;
+
+    .card-item__product {
+      width: 300px;
+      align-self: center;
+    }
+
+    .card-item__price {
+      width: 25%;
+      text-align: right;
+      align-self: center;
+      font-size: 18px;
+      font-weight: 600;
+      padding-right: 10px; 
+    }
+
+    .card-item__quantity {
+      width: 25%;
+      display: flex;
+      
+      button, input {
+        margin: 5px;
+        text-align: center;
+      }
+      
+      button {
+        min-width: 30px;
+        min-height: 30px;
+      }
+    }
+  }
+
+  .card-summary {
+    align-self: flex-end;
+    padding: 15px;
+
+    hr {
+      margin-top: 5px;
+      width: 100%;
+      border: $color-secondary 1px solid;
+    }
+
+    .card-summary__top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: $color-secondary;
+      font-weight: 600;
+      font-size: 21px;
+
+      .summary-clear {
+    
+        button {
+          width: 200px;
+          display: block;
+          margin-left: auto;
+        }
+      }
+    }
+  
+    .card-summary__bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .total {
+        display: flex;
+        width: 120%;
+      }
+
+      .total__title, .total__price {
+        font-weight: 700;
+        font-size: 26px;
+      }
+
+      .total__title{
+        width: 100%;
+        display: inline-block
+      }
+
+      .total__items {
+        font-weight: 300;
+        font-size: 22px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      .total__price {
+        text-align: right;
+        width: 60%;
+      }
+
+      .buy {
+        width: 50%;
+        button{
+          width: 100%;
+        }
+      }
+    }
+  } 
+}

@@ -1,0 +1,57 @@
+@import '../../styles/font.scss';
+@import '../../styles/color.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  font-family: $font-primary;
+  box-sizing: border-box;
+}
+main {
+
+  margin: 15px;
+
+   .product-item {
+    display: flex;
+  
+    .product-item__title {
+      width: 80%;
+    }
+  
+    .product-item__action {
+      width: 20%;
+      button {
+        width: 85%;
+      }
+    }
+  }
+
+  .product-flex {
+    display:flex;
+  
+    label {
+      width: 20%;
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    input {
+      width: 77%;
+    }
+  
+    #price, #stock {
+      width: 25%;
+    }
+  
+    button, select {
+      width: 30%;
+      margin-bottom: 25px;
+    }
+  
+    button {
+      margin-left: 100px;
+    }
+
+  }
+}
